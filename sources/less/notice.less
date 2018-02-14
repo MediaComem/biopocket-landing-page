@@ -1,0 +1,44 @@
+.notice {
+  padding: 10px;
+  font-size: .8em;
+  border-radius: 5px;
+  position: relative;
+  background-color: #eaeaea;
+  margin-bottom: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  left: -35px;
+  margin-right: -35px;
+
+  @media(max-width: @sm-max) {
+    left: 0;
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+
+  span.info-icon {
+    color: grey;
+    flex: 0 0 20px;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+    .heading-font;
+    font-size: 15px;
+    height: 20px;
+    border: 2px solid grey;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  span {
+    color: black;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+}

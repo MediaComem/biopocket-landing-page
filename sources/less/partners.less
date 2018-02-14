@@ -1,0 +1,37 @@
+#partenaires {
+  min-height: initial;
+  padding: 75px 0;
+
+  .container {
+    div {
+
+      .partner {
+        @partner-height: 50px;
+
+        display: flex;
+        padding: @partner-height;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.9);
+        -webkit-transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+        -moz-transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+        -o-transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+        
+        @media(max-width: @xs-max) {
+          padding: 30px;
+        }
+
+        &:hover, &:active {
+          transform: scale(1.1);
+        }
+
+        img {
+          width: 100%;
+          max-width: 360px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
