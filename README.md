@@ -1,6 +1,6 @@
-# Bipocket Landing Page
+# Biopocket Landing Page
 
-This repoitory contains the source code for the landing page of the BioSentiers project.
+This repoitory contains the source code for the landing page of the Biopocket project.
 
 # Gulp Tasks
 
