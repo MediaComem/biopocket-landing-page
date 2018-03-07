@@ -193,6 +193,26 @@
   }
 }
 
+#Questionnaire {
+  .wrapper {
+    .tab-wrapper;
+  }
+
+  .screencast {
+    justify-content: center;
+
+	@media(min-width: @xs-min) {
+      .Questionnaire;
+    }
+	
+    iframe {
+      position: relative;
+      top: -3px;
+      left: -1px;
+    }
+  }
+}
+
 
 
 #screens-carousel {
@@ -264,6 +284,22 @@
   display: flex;
   align-items: center;
   padding: 0 30px;
+
+  @media(max-width: @sm-max) {
+    margin-bottom: 50px;
+  }
+
+  @media(min-width: @xs-min) {
+    height: 670px; 
+    flex: 0 0 530px;
+  }
+}
+.Questionnaire() {
+  
+  
+  display: flex;
+  align-items: center;
+  
 
   @media(max-width: @sm-max) {
     margin-bottom: 50px;
