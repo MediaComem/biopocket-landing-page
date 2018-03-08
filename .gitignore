@@ -6,7 +6,7 @@ sources/css/
 ._*
 dist/
 css/
-js/
+
 config.js
 
 ### OSX ###
