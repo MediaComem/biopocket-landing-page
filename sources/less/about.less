@@ -1,0 +1,134 @@
+// Less code for the "À propos" section
+#apropos {
+  display: flex;
+  position: relative;
+
+  @media(min-width: @xs-min) {
+    height: 700px;
+  }
+
+  .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .slice-wrapper {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      color: white;
+
+      @media(max-width: @xs-max) {
+        width: 100%;
+      }
+
+      & > div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 50px 0 0;
+        .flex-transition;
+
+        @media(max-width: @xs-max) {
+          padding: 0 15px;
+        }
+      
+        &.selected {
+          flex: 4;
+        }
+      }
+      
+      & > div:hover:not(.selected) h2 {
+        // padding-left: 100px;
+      
+        span:first-child {
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+
+      h2 {
+        margin: 0;
+        position: relative;
+        -webkit-transition: padding 0.2s ease-out;
+        -moz-transition: padding 0.2s ease-out;
+        -o-transition: padding 0.2s ease-out;
+        transition: padding 0.2s ease-out;
+
+        @media(max-width: @xs-max) {
+            font-size: 1.5em;
+        }
+      }
+    
+      .content {
+        margin-top: 30px;
+        padding: 0 15px 0 70px;
+        line-height: 30px;
+        .text-font;
+
+        @media(min-width: @sm-min) {
+          padding-right: 70px;
+        }
+
+        @media(max-width: @xs-max) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .images {
+    padding-left: 0;
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    
+    img {
+      height: 100%;
+      width: 100%;
+      .object-fit('cover');
+    }
+
+    @media(max-width: @xs-max) {
+      display: none;
+    }
+  }
+  
+  .panels {
+    cursor: pointer;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+
+    .red {
+      background-color: @bs-cyan;
+    }
+    .orange {
+      background-color: @bs-lightblue;
+    }
+    .blue {
+      background-color: @bs-blue;
+    }
+    
+    & > div {
+      flex: 1;
+      .flex-transition;
+     
+      &.selected {
+        flex: 4;
+      }
+    }
+  }
+}
+
+.flex-transition() {
+  -webkit-transition: flex 0.2s;
+  -moz-transition: flex 0.2s;
+  -o-transition: flex 0.2s;
+  transition: flex 0.2s;
+}
