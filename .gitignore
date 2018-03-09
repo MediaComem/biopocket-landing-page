@@ -1,7 +1,6 @@
 node_modules/
 sources/images/
-sources/css/
-.screenrc
+sources/.screenrc
 .vscode/
 ._*
 dist/
