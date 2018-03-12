@@ -111,7 +111,7 @@ gulp.task('dev', ['browserSync', 'compile'], function () {
 gulp.task('compile', ['less', 'minify-css', 'minify-js']);
 
 gulp.task('build', ['compile'], function() {
-  return gulp.src(['css/**/*', 'js/**/*', 'img/**/*', 'index.html', 'vendor/**/*'], {base: '.'})
+  return gulp.src(['css/**/*', 'js/**/*', 'img/**/*', 'index.html', 'index_en.html', 'index3.html', 'vendor/**/*'], {base: '.'})
     .pipe(gulp.dest('dist/'));
 });
 
