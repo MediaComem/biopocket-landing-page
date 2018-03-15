@@ -111,7 +111,7 @@ gulp.task('dev', ['browserSync', 'compile'], function () {
 gulp.task('compile', ['less', 'minify-css', 'minify-js']);
 
 gulp.task('build', ['compile'], function() {
-  return gulp.src(['css/**/*', 'js/**/*', 'img/**/*', 'index.html', 'index_en.html', 'index3.html', 'vendor/**/*'], {base: '.'})
+  return gulp.src(['css/**/*', 'js/**/*', 'img/**/*', 'index.html', 'index_en.html', 'Questionnaire.html', 'vendor/**/*'], {base: '.'})
     .pipe(gulp.dest('dist/'));
 });
 
@@ -128,7 +128,7 @@ gulp.task('prod', ['build'], function() {
 
 function createProxy() {
 
-  var proxyOptions = url.parse(process.env.BACKEND_URL || config.backendUrl || 'https://biopocket.ch/api');
+  var proxyOptions = url.parse(process.env.BACKEND_URL || config.backendUrl || 'https://biosentiers.heig-vd.ch/api');
   proxyOptions.route = '/api';
 
   return proxy(proxyOptions);
