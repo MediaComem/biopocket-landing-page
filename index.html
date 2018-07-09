@@ -27,6 +27,7 @@
 
   <!-- Theme CSS -->
   <link href="./css/agency.min.css" rel="stylesheet">
+  
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -78,13 +79,11 @@
       <div class="container">
         <img src="./img/Big-logo.png">
         <div class="intro-text">
-          <div class="intro-heading"><h2>Qu'est-ce que BioPocket ?
-</h2>Un outil à la portée de tous, un véritable coach biodiversité qui tient dans la poche !</br>
-l'application est en cours de développement, mais vous pouvez nous aider en participant à cette enquête <a href="Questionnaire.html"><b>ici</b></a>
-
-</div>
-
-        </div>
+          <div class="intro-heading">Un outil à la portée de tous, un véritable coach biodiversité qui tient dans la poche !</br>
+l'application est en cours de développement, mais vous pouvez nous aider en participant à </br><b>cette enquête <a href="Questionnaire.html">ici</b></a>
+               </div>
+              </div>
+            <div style="justify-content: center; display:flex;"><a href="Questionnaire.html"><img style="max-height:120px; max-width:120px;" SRC="./img/survey.gif"></a></div>
         <a class="page-scroll scroll_button" href="#anime"><span class="glyphicon glyphicon-menu-down"></span></a>
       </div>
     </div>
@@ -101,7 +100,7 @@ l'application est en cours de développement, mais vous pouvez nous aider en par
           <div >
             <div id="animation">
               <!-- width="349" height="554" -->
-              <iframe style="transform: scale(0.85)" src="https://www.youtube.com/embed/r9p0pG4iJ-A" class="frame"></iframe>
+              <iframe style="transform: scale(0.85)" src="https://www.youtube.com/embed/l1UtCks1ljE" class="frame"></iframe>
             </div>
 			
           </div>
@@ -113,34 +112,46 @@ l'application est en cours de développement, mais vous pouvez nous aider en par
  
   
   
+<!-- a propos -->  
   
-  
-  <section id="apropos">
+   <section id="apropos">
     <div class="container">
       <div class="slice-wrapper">
-        <div>
+        <div class="slice" data-slice-id="1">
           <div class="title">
+            <h2 class="numbered">
+              <span><img src="./img/eye.png" alt="" ></span>
+              <span>Observez</span>
+            </h2>
+          </div>
+          <div class="content hidden">
+            <p>Biopocket vous accompagne dans vos découvertes de la biodiversité et vous informe dès que la nature s’offre à être observée.</p>
+            <p>Mais ne vous contentez pas de l’admirer ! La biodiversité a aussi besoin de vous. Biopocket vous permet d’agir autant que d’admirer.</p>
+          </div>
+        </div>
+        <div class="slice" data-slice-id="2">
+          <div class="title">
+            <h2 class="numbered">
+              <span><img src="./img/brain.png" alt="" ></span>
+              <span>Apprenez</span>
+            </h2>
+          </div>
+          <div class="content hidden">
+            <p>BioPocket vous assiste dans vos apprentissages : documentez vos démarches et apprenez-en davantage sur la flore et la faune de votre quartier.</p>
             
-              <h2>Découvrez les actions en faveur de la biodiversité réalisées par les membres de la communauté</b></a></h2>
-           
           </div>
-          
         </div>
-        <div >
+        <div class="slice" data-slice-id="3">
           <div class="title">
-            <h2>
-              A l’aide d’une carte interactive mise à jour en temps réel, renseignez-vous sur les actions entreprises près de chez vous
+            <h2 class="numbered">
+              <span><img src="./img/hand.png" alt="" ></span>
+              <span>Participez</span>
             </h2>
           </div>
-
-        </div>
-        <div >
-          <div class="title">
-            <h2>
-              Entrez en contact avec les membres de la communauté pour proposer votre aide dans la réalisation d’un projet ou pour partager vos créations
-            </h2>
+          <div class="content hidden">
+            <p>Enfin, BioPocket vous permet de réaliser diverses tâches en faveur de la biodiversité. A votre rythme, engagez-vous à, à bâtir, à aménager, à entretenir ; BioPocket vous guide concrètement. De quel matériel avez-vous besoin ? comment repérer le lieu idéal ? par quoi commencer ? BioPocket starvement dans la réalisation de vos actions
+            </p>
           </div>
-
         </div>
       </div>
     </div>
@@ -150,8 +161,10 @@ l'application est en cours de développement, mais vous pouvez nous aider en par
       <div id="slice-bg-3" class="blue"></div>
     </div>
     <div class="images">
-      
-      <img id="aboutDef" class="img-responsive" src="./img/about_def.png">
+      <img id="about1" class="img-responsive hidden" src="./img/Dashboard_acte_communaute.png">
+      <img id="about2" class="img-responsive hidden" src="./img/Details_tache.png">
+      <img id="about3" class="img-responsive hidden" src="./img/Details_acte.png">
+      <img id="aboutDef" class="img-responsive" src="./img/Screenflow.png">
     </div>
   </section>
 
@@ -191,13 +204,13 @@ l'application est en cours de développement, mais vous pouvez nous aider en par
 				  
                     <div data-slide-id="s1" class="item active">
                       <!--<img src="./img/screens/01.png" alt="">-->
-					  <img src="./img/screens/01.png" alt="" >
+					  <img src="./img/screens/1.png" alt="" >
                     </div>
                     <div data-slide-id="s2" class="item">
-                      <img src="./img/screens/02.png" alt="">
+                      <img src="./img/screens/2.png" alt="">
                     </div>
                     <div data-slide-id="s3" class="item">
-                      <img src="./img/screens/03.png" alt="">
+                      <img src="./img/screens/3.png" alt="">
                     </div>
 					
                   </div>
@@ -214,26 +227,23 @@ l'application est en cours de développement, mais vous pouvez nous aider en par
 
             <div class="legend left">
               <div class="s1">
-                <h2>Observez</h2>
-                <p>Biopocket vous accompagne dans vos découvertes de la biodiversité et vous informe dès que la nature s’offre à être observée.</p>
+                <p><b>Découvrez les actions en faveur de la biodiversité réalisées par les membres de la communauté</b></p>
+                
               
               </div>
               <div class="s2 hidden">
-                <h2>Apprenez</h2>
-                <p>BioPocket vous assiste dans vos apprentissages : documentez vos démarches et apprenez-en davantage sur la flore et la faune de votre quartier.
-</p>
+                <p><b>A l’aide d’une carte interactive mise à jour en temps réel, renseignez-vous sur les actions entreprises près de chez vous</b></p>
+                
               </div>
               <div class="s3 hidden">
-                <h2>Participez</h2>
-                <p>Enfin, BioPocket vous permet de réaliser diverses tâches en faveur de la biodiversité. A votre rythme, engagez-vous à, à bâtir, à aménager, à entretenir ; BioPocket vous guide concrètement. De quel matériel avez-vous besoin ? comment repérer le lieu idéal ? par quoi commencer ? BioPocket vous soutiendra activement dans la réalisation de vos actions</p>
+                
+                <p><b>Entrez en contact avec les membres de la communauté pour proposer votre aide dans la réalisation d’un projet ou pour partager 
+				vos créations</b></p>
               </div>
               
             </div>
             <div class="legend right">
-              <div class="s1">
-                <p>Mais ne vous contentez pas de l’admirer ! La biodiversité a aussi besoin de vous. Biopocket vous permet d’agir autant que d’admirer.
-                </p> 
-              </div>
+              
               
             </div>
           </div>
@@ -262,9 +272,10 @@ l'application est en cours de développement, mais vous pouvez nous aider en par
   <section id="contacts">
     <div class="container">
       <div class="row ">
-        <div class="col-md-12 col-sm-12 info">
-          <h2>Contact</h2>
-          
+        <div class="col-md-6 col-sm-12 info">
+          <h2>Qui sommes-nous?</h2>
+          <p>Le concept BioPocket est développé par une équipe interdisciplinaire de la HES-SO regroupant des compétences
+            des instituts MEI et INSIT, et l’expertise de l’institut inTNE en écologie et gestion des milieux naturels et aménagés.</p>
           <div class="references row">
             <div class="reference col-sm-6 col-xs-12">
               <a href="http://mei.heig-vd.ch/contact" target="blank">
@@ -288,8 +299,43 @@ l'application est en cours de développement, mais vous pouvez nous aider en par
             </div>
           </div>
         </div>
+        <div  class="col-md-6 col-sm-12 info">
+         <div>
+              <h2>CONTACTEZ-NOUS</h2>
+            </div>
+            <form action="https://formspree.io/lotfian.maryam@gmail.com" method="POST" data-form-title="CONTACT US">
+              <input type="hidden" data-form-email="true">
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" required="" placeholder="Nom*" data-form-field="Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" required="" placeholder="Email*" data-form-field="Email">
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control" name="subject" placeholder="Sujet" data-form-field="Subject">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" placeholder="Message" rows="7" data-form-field="Message"></textarea>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-lg btn-danger">Envoyer</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- Partners Section -->
+  <section id="partenaires">
+    <div class="container">
+      <h2>Partenaires</h2>
+      <div class="row">
+        <a href="https://www.onex.ch/fr/onex-au-quotidien/" target="blank" class="partner col-md-6 col-xs-6"><img src="./img/Couleur.png"></a>
+        <a href="https://www.hes-so.ch/" target="blank" class="partner col-md-6 col-xs-6"><img src="./img/logo-hes-so-new.png"></a>
         
       </div>
+    </div>
     </div>
   </section>
 
